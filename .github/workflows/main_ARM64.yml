@@ -3,11 +3,13 @@ name: Build Manic Miner Ubuntu 22.04 ARM64
 on:
   push:
     branches:
-      - main
+      - none
   pull_request:
     branches:
-      - main
-
+      - none
+      
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: self-hosted
