@@ -3,10 +3,12 @@ name: Build Manic Miner Ubuntu 20.04
 on:
   push:
     branches:
-      - main
+      - none
   pull_request:
     branches:
-      - main
+      - none
+
+  workflow_dispatch:
 
 jobs:
   build:
