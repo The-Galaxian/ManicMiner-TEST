@@ -20,6 +20,7 @@ jobs:
 
     - name: Set up libs
       run: |
+        sudo add-apt-repository ppa:pipewire-debian/pipewire-upstream
         apt update -y && apt install -y sudo
         sudo apt update
         sudo apt install -y libsdl2-dev appstream wget fuse ibpipewire-0.3-dev libfuse2
