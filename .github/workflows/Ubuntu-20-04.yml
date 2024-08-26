@@ -75,3 +75,9 @@ jobs:
       with:
         name: manicminer2004.AppImage
         path: manicminer2004.AppImage
+    - name: Upload AppImage artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: manicminer
+        path: manicminer
+  
